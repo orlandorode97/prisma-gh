@@ -16,3 +16,12 @@ datasource db {
 model User {
   id Int @id @default(autoincrement())
 }
+
+model Prro {
+  id Int @id @default(autoincrement())
+  name String
+}
+
+model culo {
+  id Int @id @default(autoincrement())
+}
