@@ -5,4 +5,4 @@
 
 */
 -- AlterTable
-ALTER TABLE `Prr` ADD COLUMN `wrong_field` VARCHAR(191) NOT NULL;
+ALTER TABLE `Prro` ADD COLUMN `wrong_field` VARCHAR(191) NOT NULL;
