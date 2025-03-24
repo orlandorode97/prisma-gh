@@ -22,6 +22,7 @@ model Prro {
   name String
   email String
   new_field String
+  wrong_field String
 }
 
 model culo {
