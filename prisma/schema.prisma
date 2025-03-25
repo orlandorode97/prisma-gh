@@ -17,7 +17,7 @@ model User {
   id Int @id @default(autoincrement())
 }
 
-model Prro {
+model Model {
   id Int @id @default(autoincrement())
   name String
   email String
@@ -25,6 +25,6 @@ model Prro {
   wrong_field String
 }
 
-model culo {
+model Rename {
   id Int @id @default(autoincrement())
 }
