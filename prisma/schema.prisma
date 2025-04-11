@@ -20,7 +20,7 @@ model user {
 model model {
   id Int @id @default(autoincrement())
   name String
-  email String
+  email String @unique
   new_field String
   wrong_field String
 }
