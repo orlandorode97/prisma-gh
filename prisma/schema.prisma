@@ -13,11 +13,11 @@ datasource db {
   url      = env("DSN")
 }
 
-model User {
+model user {
   id Int @id @default(autoincrement())
 }
 
-model Model {
+model model {
   id Int @id @default(autoincrement())
   name String
   email String
@@ -25,7 +25,7 @@ model Model {
   wrong_field String
 }
 
-model Rename {
+model rename {
   id Int @id @default(autoincrement())
   is_active Boolean
 }

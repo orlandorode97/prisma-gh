@@ -1,18 +1,12 @@
-/*
-  Warnings:
+-- CreateTable
+CREATE TABLE `user` (
+    `id` INTEGER NOT NULL AUTO_INCREMENT,
 
-  - You are about to drop the `Prro` table. If the table is not empty, all the data it contains will be lost.
-  - You are about to drop the `culo` table. If the table is not empty, all the data it contains will be lost.
-
-*/
--- DropTable
-DROP TABLE `Prro`;
-
--- DropTable
-DROP TABLE `culo`;
+    PRIMARY KEY (`id`)
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 -- CreateTable
-CREATE TABLE `Model` (
+CREATE TABLE `model` (
     `id` INTEGER NOT NULL AUTO_INCREMENT,
     `name` VARCHAR(191) NOT NULL,
     `email` VARCHAR(191) NOT NULL,
@@ -23,8 +17,9 @@ CREATE TABLE `Model` (
 ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 -- CreateTable
-CREATE TABLE `Rename` (
+CREATE TABLE `rename` (
     `id` INTEGER NOT NULL AUTO_INCREMENT,
+    `is_active` BOOLEAN NOT NULL,
 
     PRIMARY KEY (`id`)
 ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
