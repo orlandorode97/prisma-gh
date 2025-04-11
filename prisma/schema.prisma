@@ -27,4 +27,5 @@ model Model {
 
 model Rename {
   id Int @id @default(autoincrement())
+  is_active Boolean
 }
