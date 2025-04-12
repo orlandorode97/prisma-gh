@@ -11,15 +11,11 @@ on:
           - stage1
           - stage2
           - stage3
-      branch:
-        description: The branch of the migration repo
-        required: true
-        type: string
 
 jobs:
   call-deploy-migrations:
-    uses: orlandorode97/gh-example/.github/workflows/deploy-migrations.yml@example
+    uses: orlandorode97/gh-example/.github/workflows/deploy_staging_migrations.yml@example
     with:
       environment: ${{ inputs.environment }}
-      branch: ${{ inputs.branch }}
+      branch: ${{ github.ref_name }}
       directory: prisma-gh
