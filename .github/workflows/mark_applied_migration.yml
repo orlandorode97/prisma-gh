@@ -1,4 +1,4 @@
-name: Trigger Rollback Failed Migration in Staging
+name: Trigger Mark Applied Migration
 
 on:
   workflow_dispatch:
@@ -11,13 +11,17 @@ on:
           - stage1
           - stage2
           - stage3
+      migration_name:
+        type: string
+        description: The migration to mark as applied
 
 jobs:
-  rollback:
-    uses: orlandorode97/gh-example/.github/workflows/rollback_staging_failed_migration.yml@example
+  mark-applied-migration:
+    uses: orlandorode97/gh-example/.github/workflows/mark_applied_migration.yml@example
     permissions:
       id-token: write
       contents: read
     with:
       environment: ${{ inputs.environment }}
       directory: prisma-gh
+      migration_name: ${{ inputs.migration_name }}
