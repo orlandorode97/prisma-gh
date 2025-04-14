@@ -15,6 +15,8 @@ on:
 jobs:
   call-deploy-migrations:
     uses: orlandorode97/gh-example/.github/workflows/deploy_staging_migrations.yml@example
+    secrets:
+      GH_TOKEN: ${{ secrets.GH_TOKEN }}
     permissions:
       id-token: write
       contents: read
