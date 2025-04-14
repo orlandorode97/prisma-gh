@@ -21,3 +21,4 @@ jobs:
     with:
       environment: ${{ inputs.environment }}
       directory: prisma-gh
+      branch: ${{ github.ref }}
