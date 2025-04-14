@@ -33,6 +33,6 @@ model Image {
 model Server {
    id             Int     @id @default(autoincrement())
    host String
- 
+   port String
 }
 
