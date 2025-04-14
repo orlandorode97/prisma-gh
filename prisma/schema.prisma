@@ -21,10 +21,6 @@ model model {
   id Int @id @default(autoincrement())
   name String
   email String
-  new_field String
-  wrong_field String
-  my_full_name String
-  this_is_my String
 }
 
 model rename {
