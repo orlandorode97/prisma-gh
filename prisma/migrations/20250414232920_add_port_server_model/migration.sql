@@ -5,4 +5,4 @@
 
 */
 -- AlterTable
-ALTER TABLE `Server` ADD COLUMN `port` VARCHAR(191) NOTT NULL;
+ALTER TABLE `Server` ADD COLUMN `port` VARCHAR(191) NOT NULL;
