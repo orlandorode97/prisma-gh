@@ -13,7 +13,7 @@ on:
           - stage3
 
 jobs:
-  call-deploy-migrations:
+  rollback:
     uses: orlandorode97/gh-example/.github/workflows/rollback_staging_failed_migration.yml@example
     permissions:
       id-token: write

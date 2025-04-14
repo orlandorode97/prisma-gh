@@ -16,7 +16,7 @@ on:
         description: The migration to mark as applied
 
 jobs:
-  call-deploy-migrations:
+  mark-applied-migration:
     uses: orlandorode97/gh-example/.github/workflows/mark_applied_migration.yml@example
     permissions:
       id-token: write
