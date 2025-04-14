@@ -20,5 +20,4 @@ jobs:
       contents: read
     with:
       environment: ${{ inputs.environment }}
-      branch: ${{ github.ref_name }}
       directory: prisma-gh
