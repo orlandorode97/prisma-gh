@@ -1,4 +1,4 @@
-name: Trigger Migrations to Staging
+name: Trigger Rollback Migration in Staging
 
 on:
   workflow_dispatch:
@@ -13,8 +13,8 @@ on:
           - stage3
 
 jobs:
-  call-deploy-migrations:
-    uses: orlandorode97/gh-example/.github/workflows/deploy_migrations.yml@example
+  rollback:
+    uses: orlandorode97/gh-example/.github/workflows/rollback_migration.yml@example
     permissions:
       id-token: write
       contents: read

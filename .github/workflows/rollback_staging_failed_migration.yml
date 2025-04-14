@@ -14,7 +14,7 @@ on:
 
 jobs:
   rollback:
-    uses: orlandorode97/gh-example/.github/workflows/rollback_staging_failed_migration.yml@example
+    uses: orlandorode97/gh-example/.github/workflows/rollback_failed_migration.yml@example
     permissions:
       id-token: write
       contents: read

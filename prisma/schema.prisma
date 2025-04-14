@@ -11,7 +11,28 @@ datasource db {
 model User {
   id             Int     @id @default(autoincrement())
   email          String  @unique
-  name           String
-  profilePicture String @default("")
+  name           String  @unique
+  profilePicture String
+
+  @@index([email])
+}
+
+model Post {
+  id             Int     @id @default(autoincrement())
+  email String @unique
+
+  @@index([email])
+
+}
+
+model Image {
+  id             Int     @id @default(autoincrement())
+  url String @unique
+}
+
+model Server {
+   id             Int     @id @default(autoincrement())
+   host String
+ 
 }
 
