@@ -13,3 +13,5 @@ jobs:
     with:
       environment: production
       directory: prisma-gh
+    secrets:
+      GH_TOKEN: ${{ secrets.GH_TOKEN }}
