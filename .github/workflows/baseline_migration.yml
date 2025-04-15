@@ -1,0 +1,16 @@
+name: Baseline Production Database
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  rollback:
+    uses: orlandorode97/gh-example/.github/workflows/baseline_migration.yml@example
+    permissions:
+      id-token: write
+      contents: read
+    with:
+      environment: production
+      directory: prisma-gh
