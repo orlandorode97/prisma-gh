@@ -5,7 +5,7 @@ on:
   workflow_call:
 
 jobs:
-  rollback:
+  baseline:
     uses: orlandorode97/gh-example/.github/workflows/baseline_migration.yml@example
     permissions:
       id-token: write
