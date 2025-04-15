@@ -1,9 +1,7 @@
 name: Baseline Production Database
 
 on:
-  push:
-    branches:
-      - master
+  workflow_call:
 
 jobs:
   rollback:
