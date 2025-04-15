@@ -1,6 +1,7 @@
 name: Baseline Production Database
 
 on:
+  workflow_dispatch:
   workflow_call:
 
 jobs:
